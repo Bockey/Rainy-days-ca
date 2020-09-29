@@ -1,0 +1,99 @@
+/*header*/
+#header-box{
+    background-color: #005438;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    display: inline-block;
+    
+}
+nav a {
+    text-decoration: none;
+    font-size: 2.8125rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.sign{
+    text-decoration: none;
+    color: #fff;
+}
+#sign-nav{
+    display: none;
+}
+#sign-nav li{
+    list-style-type: none;
+    
+}
+#your-page{
+    display: none;
+}
+#your-page:checked ~ #sign-nav{
+    display: block;
+}
+/*footer*/
+#footer-block{
+    background-color: #253631;
+}
+footer li a{
+    color: #DFDDDD;
+    text-decoration: none;
+}
+#branding {
+    background-color:#DFDDDD ;
+    height: 2.875rem;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around;
+}
+#branding li{
+    display: inline-block;
+}
+#footer-list li{
+   list-style-type: none;
+}
+#dynamic::before {
+    content: "DYNAMIC";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+    font-style: italic;
+}
+#durable::before {
+    content: "Durable";
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing:0.57em;
+}
+#active::before {
+    content: "ACTIVE";
+    font-size: 1.75rem;
+    color: #0A72F9;
+    
+}
+#natural::before {
+    content: "Natural";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #005438;
+}
+#comfortable::before {
+    content: "Comfortable";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+#powerful::before {
+    content: "POWERFUL";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+/*home-page*/
