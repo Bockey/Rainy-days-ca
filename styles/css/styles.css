@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 1rem 2rem 1rem 2rem;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -17,13 +18,14 @@ nav li{
 }
 nav a {
     text-decoration: none;
-    font-size: 2.8125rem;
+    font-size: 45px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    
+    color: #253631;
 }
 nav a:hover{
     text-decoration: underline;
+    color: #253631;
 }
 .sign{
     text-decoration: none;
@@ -34,7 +36,7 @@ nav a:hover{
 }
 #sign-nav li{
     list-style-type: none;
-    
+    display: block;
 }
 #your-page{
     display: none;
@@ -42,6 +44,7 @@ nav a:hover{
 #your-page:checked ~ #sign-nav{
     display: block;
 }
+
 /*footer*/
 #footer-block{
     background-color: #253631;
@@ -51,10 +54,7 @@ nav a:hover{
     padding: 1rem 3rem 1rem 3rem;
 }
 
-footer li a{
-    color: #DFDDDD;
-    text-decoration: none;
-}
+
 #branding {
     background-color:#DFDDDD ;
     height: 2.875rem;
@@ -68,6 +68,8 @@ footer li a{
 }
 #footer-list li{
    list-style-type: none;
+   font-family: Tahoma, Georgia, Verdana;
+
 }
 #dynamic::before {
     content: "DYNAMIC";
@@ -106,10 +108,47 @@ footer li a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 2vw;
-    
+}
+footer li a{
+    color: #DFDDDD;
+    text-decoration: none;
 }
 #social-net a{
-    padding-right: 0.5rem;
-
+    padding-right: 0.5rem;   
 }
 /*home-page*/
+.new-products{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 1rem 3rem 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mini-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mini{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 120%;
+    height: auto;
+}
+.main{
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+
+}
+
+h2{
+    font-family: Georgia,  serif;
+    font-size: 30px;
+}
+h3{
+    font-family: Tahoma, Georgia, serif ;
+    font-size: 20px;
+    font-weight: normal;
+}
