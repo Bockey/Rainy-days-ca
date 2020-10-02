@@ -218,6 +218,7 @@ h3{
     #header-side{
         padding-top: 20px;
     }
+    /*
     #side-icons img{
         padding-right: 3px;
         background-color:  #DFDDDD;
@@ -226,6 +227,7 @@ h3{
         padding-top: 3px;
         border: 1px solid #fff;
     }
+    */
     #sign-nav{
         position: absolute;
         top: 25px;
