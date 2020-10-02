@@ -27,16 +27,35 @@ nav a:hover{
     text-decoration: underline;
     color: #253631;
 }
+#header-side{
+    display: flex;
+    align-items: center;
+}
+#side-icons{
+    display: block;
+}
 .sign{
     text-decoration: none;
     color: #fff;
 }
 #sign-nav{
     display: none;
+    position: absolute;
+    right: 65px;
+    top: 60px;
+    
+}
+#search-button{
+    background-color: #fff;
+    padding: 8px 3px 8px 3px;
+    border: 3px solid #DFDDDD;
+    border-left: #fff;
+
 }
 #sign-nav li{
     list-style-type: none;
-    display: block;
+    display: inline;
+   
 }
 #your-page{
     display: none;
@@ -44,7 +63,12 @@ nav a:hover{
 #your-page:checked ~ #sign-nav{
     display: block;
 }
-
+#search{
+    width: 292px;
+    height: 53px;
+    border: 3px solid #DFDDDD;
+    border-right: #fff;
+}
 /*footer*/
 #footer-block{
     background-color: #253631;
