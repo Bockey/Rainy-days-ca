@@ -40,6 +40,7 @@ nav a:hover{
 #sides-2{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 #side-icons img{
     padding: 10px 0 0 20px;
@@ -51,6 +52,8 @@ nav a:hover{
 #sign-nav{
     display: none;
     position: absolute;
+    top: 70px;
+    right: 116px;
 }
 #search-button{
     background-color: #fff;
@@ -63,8 +66,8 @@ input{
 }
 #sign-nav li{
     list-style-type: none;
-    display: inline;
-   
+    display: inline-block;
+    padding-right: 10px;
 }
 #your-page{
     display: none;
@@ -178,7 +181,8 @@ footer li a{
     max-width: 100%;
     height: auto;
     padding-bottom: 3rem;
-
+    width: 100vw;
+    height: auto;
 }
 
 h2{
@@ -197,4 +201,34 @@ h3{
           height: 60vw;
           width: auto;
         }
+    #header-box{
+          display: flex;
+          flex-direction: column;
+          padding: 20px 50px 20px 50px;
+        }    
+    #side-icons{
+        position: absolute;
+        top:20px;
+        right: 20px;
+    }
+    #header-side{
+        padding-top: 20px;
+    }
+    #side-icons img{
+        padding-right: 3px;
+        background-color:  #DFDDDD;
+        padding-left: 3px;
+        border-radius: 10px;
+        padding-top: 3px;
+        border: 1px solid #fff;
+    }
+    #sign-nav{
+        position: absolute;
+        top: 30px;
+        right: 90px;
+    }
+    #sign-nav li{
+        padding-top: 10px;
+    }
+    
 }
