@@ -4,17 +4,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 20px 50px 20px 50px;
     flex-wrap: wrap;
 }
 
 nav ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 nav li{
-    display: inline-block;
-    
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 nav a {
     text-decoration: none;
@@ -22,6 +24,7 @@ nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #253631;
+    padding: 0px 20px 0px 20px;
 }
 nav a:hover{
     text-decoration: underline;
@@ -33,6 +36,13 @@ nav a:hover{
 }
 #side-icons{
     display: block;
+}    
+#sides-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+#side-icons img{
+    padding: 10px 0 0 20px;
 }
 .sign{
     text-decoration: none;
@@ -41,16 +51,15 @@ nav a:hover{
 #sign-nav{
     display: none;
     position: absolute;
-    right: 65px;
-    top: 60px;
-    
 }
 #search-button{
     background-color: #fff;
     padding: 8px 3px 8px 3px;
     border: 3px solid #DFDDDD;
     border-left: #fff;
-
+}
+input{ 
+    outline: none;
 }
 #sign-nav li{
     list-style-type: none;
@@ -69,6 +78,7 @@ nav a:hover{
     border: 3px solid #DFDDDD;
     border-right: #fff;
 }
+
 /*footer*/
 #footer-block{
     background-color: #253631;
@@ -76,6 +86,7 @@ nav a:hover{
     align-items: center;
     justify-content: space-between;
     padding: 1rem 3rem 1rem 3rem;
+    flex-wrap: wrap;
 }
 
 
@@ -137,8 +148,11 @@ footer li a{
     color: #DFDDDD;
     text-decoration: none;
 }
-#social-net a{
-    padding-right: 0.5rem;   
+#social-net img{
+    padding: 20px 20px 20px 20px;   
+}
+#footer-list li{
+    padding: 10px 20px 10px 5px;
 }
 /*home-page*/
 .new-products{
