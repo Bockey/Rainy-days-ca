@@ -194,6 +194,7 @@ h3{
 {
     /* Smaller Screen */
     .main-banner img{
-         width: auto;
-         height: 150%;}
+          height: 60vw;
+          width: auto;
+        }
 }
