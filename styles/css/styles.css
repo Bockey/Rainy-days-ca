@@ -208,7 +208,7 @@ h3{
     #header-box{
           display: flex;
           flex-direction: column;
-          padding: 20px 10px 20px 10px;
+          padding: 10px 10px 20px 10px;
         }    
     #side-icons{
         position: absolute;
@@ -256,5 +256,7 @@ h3{
     }
     .logo{
         padding: 0px 20px 40px 0;
+        width: 50%;
+        height: auto;
     }
 }
