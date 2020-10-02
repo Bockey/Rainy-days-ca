@@ -190,3 +190,10 @@ h3{
     font-size: 20px;
     font-weight: normal;
 }
+@media (max-width:800px)
+{
+    /* Smaller Screen */
+    .main-banner img{
+         width: auto;
+         height: 150%;}
+}
