@@ -204,7 +204,7 @@ h3{
     #header-box{
           display: flex;
           flex-direction: column;
-          padding: 20px 50px 20px 50px;
+          padding: 20px 10px 20px 10px;
         }    
     #side-icons{
         position: absolute;
@@ -224,11 +224,9 @@ h3{
     }
     #sign-nav{
         position: absolute;
-        top: 30px;
-        right: 90px;
+        top: 25px;
+        right: 80px;
     }
     #sign-nav li{
         padding-top: 10px;
-    }
-    
 }
