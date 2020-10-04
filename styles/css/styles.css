@@ -250,6 +250,7 @@ h3{
     nav a{
         padding: 0px 10px 0px 10px;
         border: 1px solid #005438;   
+        font-size: 30px;
     }
     nav ul{
         justify-content: space-between;
