@@ -52,8 +52,8 @@ nav a:hover{
 #sign-nav{
     display: none;
     position: absolute;
-    top: 70px;
-    right: 116px;
+    top: 80px;
+    right: 135px;
 }
 #search-button{
     background-color: #fff;
@@ -92,11 +92,13 @@ input{
     flex-wrap: wrap;
 }
 
+#footer-block :nth-child(1) { order: 3; }
+#footer-block :nth-child(2) { order: 2; }
+#footer-block :nth-child(3) { order: 1; }
 
 #branding {
     background-color:#DFDDDD ;
-    height: 2.875rem;
-    
+    height: 2.875rem;   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,7 +109,6 @@ input{
 #footer-list li{
    list-style-type: none;
    font-family: Tahoma, Georgia, Verdana;
-
 }
 #dynamic::before {
     content: "DYNAMIC";
@@ -126,7 +127,6 @@ input{
     content: "ACTIVE";
     font-size: 2vw;
     color: #0A72F9;
-    
 }
 #natural::before {
     content: "Natural";
@@ -150,6 +150,10 @@ input{
 footer li a{
     color: #DFDDDD;
     text-decoration: none;
+}
+#social-net{
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 #social-net img{
     padding: 20px 20px 20px 20px;   
@@ -228,13 +232,20 @@ h3{
         border: 1px solid #fff;
     }
     */
+    #side-icons img{
+        width: 20px;
+        height: auto;
+    }
     #sign-nav{
         position: absolute;
         top: 25px;
-        right: 80px;
+        right: 100px;
     }
     #sign-nav li{
-        padding-top: 10px;
+        padding-top: 20px;
+    }
+    #your-page:checked ~ #sign-nav{
+        display: flex;
     }
     nav a{
         padding: 0px 10px 0px 10px;
