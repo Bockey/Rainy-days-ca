@@ -12,11 +12,13 @@ nav ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-bottom: 1px solid #DFDDDD;
+    margin-bottom: 0;
 }
 nav li{
     display: block;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 nav a {
     text-decoration: none;
@@ -53,7 +55,7 @@ nav a:hover{
     display: none;
     position: absolute;
     top: 80px;
-    right: 135px;
+    right: 120px;
 }
 #search-button{
     background-color: #fff;
@@ -92,9 +94,7 @@ input{
     flex-wrap: wrap;
 }
 
-#footer-block :nth-child(1) { order: 3; }
-#footer-block :nth-child(2) { order: 2; }
-#footer-block :nth-child(3) { order: 1; }
+
 
 #branding {
     background-color:#DFDDDD ;
@@ -161,7 +161,17 @@ footer li a{
 #footer-list li{
     padding: 10px 20px 10px 5px;
 }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
 /*home-page*/
+main{
+    background-image: url("../../images/Texture.png");
+    background-position: -450px 200px;
+}
 .new-products{
     display: flex;
     justify-content: space-evenly;
@@ -198,15 +208,37 @@ h3{
     font-size: 20px;
     font-weight: normal;
 }
+/*about page*/
+#bread-crumbs{
+    
+}
+#home-bread{
+    text-decoration: none;
+    color: #000;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 20px;
+}
+#home-bread:hover{
+    color: #005438;
+}
+#current-bread{
+    font-size: 30px;
+    padding: 0 0 0 0;
+}
 @media (max-width:800px)
 {
     /* Smaller Screen */
+    main{
+        background: none;
+    }
     .main-banner img{
-          height: 60vw;
-          width: auto;
+          display: none;
         }
+
     .mini{
-        height: 60vw;
+        height: 40vw;
         width: auto;
     }    
     #header-box{
@@ -284,4 +316,7 @@ h3{
         width: 50%;
         height: auto;
     }
+    #footer-block :nth-child(1) { order: 3; }
+    #footer-block :nth-child(2) { order: 2; }
+    #footer-block :nth-child(3) { order: 1; }
 }
