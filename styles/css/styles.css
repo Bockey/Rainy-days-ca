@@ -259,7 +259,9 @@ h3{
         position: absolute;
         top: 60px;
         left: 20px;
-        margin-top: 30px;
+        margin-top: 100px;
+        width: 93%;
+        border-bottom: 1px solid #005438;
     }
     #side-icons img{
         width: 20px;
@@ -276,12 +278,11 @@ h3{
     #search{
         width: 50vw;
         border:none;
-        border-bottom: 1px solid #000;
     }
     #search-button{
         border: none;
         position: absolute;
-        right: 5px;
+        right: 7px;
     }
     #your-page:checked ~ #sign-nav{
         display: flex;
@@ -338,7 +339,7 @@ h3{
         filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(180deg) brightness(0%) contrast(100%);
         position: absolute;
         top: 5px;
-        left:40%;
+        left:34%;
         width: 70px;
         height: auto;
         padding: 15px 0 0 20px;
