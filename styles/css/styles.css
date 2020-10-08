@@ -269,11 +269,19 @@ h3{
     }
     #sign-nav{
         position: absolute;
-        top: 25px;
-        right: 50px;
+        top: 15px;
+        right: 38px;
+        padding: 0 0 15px 0;
+        border: 1px solid #DFDDDD;
+        border-radius: 30px;
+        background-color: #DFDDDD;
     }
     #sign-nav li{
-        padding-top: 20px;
+        padding: 20px 15px 0 15px;
+    }
+    #sign-nav a{
+        color: #005438;
+        font-weight: bold;
     }
     #search{
         width: 50vw;
@@ -298,13 +306,14 @@ h3{
     }
     nav ul{
         display: none;
-        padding-top: 30px;
+        margin-top: 67px;
+        background-color: #000;
     }
     
     nav a{
         padding: 0px 10px 0px 10px;
-           
         font-size: 30px;
+        color: #FFF;
     }
     /*
     nav ul{
@@ -338,9 +347,9 @@ h3{
     .logo{
         /*filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(180deg) brightness(0%) contrast(100%);*/
         position: absolute;
-        top: 5px;
-        left:34%;
-        width: 70px;
+        top: 65px;
+        left:32%;
+        width: 100px;
         height: auto;
         padding: 15px 0 0 20px;
         background-color
