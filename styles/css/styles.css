@@ -253,7 +253,7 @@ h3{
         right: 20px;
     }
     #sides-2{
-        padding-bottom: 112px;
+        padding-bottom: 122px;
     }
     #header-side{
         position: absolute;
@@ -347,11 +347,14 @@ h3{
         border-radius: 10px;
         margin:1px;
     }
+    #social-net{
+        padding:0;
+    }
     #social-net img{
         padding: 20px 10px 0 10px;
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(180deg) brightness(0%) contrast(100%);
     }
     .logo{
-        /*filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(180deg) brightness(0%) contrast(100%);*/
         position: absolute;
         top: 65px;
         right:40%;
