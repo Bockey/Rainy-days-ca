@@ -14,6 +14,7 @@ nav ul{
     flex-wrap: wrap;
     border-bottom: 1px solid #DFDDDD;
     margin-bottom: 0;
+    padding: 0;
 }
 nav li{
     display: block;
@@ -31,6 +32,12 @@ nav a {
 nav a:hover{
     text-decoration: underline;
     color: #253631;
+}
+.current{
+    text-decoration: underline;
+}
+nav label, #navigation{
+    display: none;
 }
 #header-side{
     display: flex;
@@ -93,9 +100,6 @@ input{
     padding: 1rem 3rem 1rem 3rem;
     flex-wrap: wrap;
 }
-
-
-
 #branding {
     background-color:#DFDDDD ;
     height: 2.875rem;   
@@ -209,9 +213,6 @@ h3{
     font-weight: normal;
 }
 /*about page*/
-#bread-crumbs{
-    
-}
 #home-bread{
     text-decoration: none;
     color: #000;
@@ -251,19 +252,15 @@ h3{
         top:20px;
         right: 20px;
     }
+    #sides-2{
+        padding-bottom: 112px;
+    }
     #header-side{
-        padding-top: 20px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        margin-top: 30px;
     }
-    /*
-    #side-icons img{
-        padding-right: 3px;
-        background-color:  #DFDDDD;
-        padding-left: 3px;
-        border-radius: 10px;
-        padding-top: 3px;
-        border: 1px solid #fff;
-    }
-    */
     #side-icons img{
         width: 20px;
         height: auto;
@@ -276,14 +273,39 @@ h3{
     #sign-nav li{
         padding-top: 20px;
     }
+    #search{
+        width: 50vw;
+        border:none;
+        border-bottom: 1px solid #000;
+    }
+    #search-button{
+        border: none;
+        position: absolute;
+        right: 5px;
+    }
     #your-page:checked ~ #sign-nav{
         display: flex;
     }
+    #navigation:checked ~ #nav-list{
+        display: block;
+    }
+    nav label{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    nav ul{
+        display: none;
+        padding-top: 30px;
+    }
+    
     nav a{
         padding: 0px 10px 0px 10px;
-        border: 1px solid #005438;   
+           
         font-size: 30px;
     }
+    /*
     nav ul{
         justify-content: space-between;
         padding-left: 25px;
@@ -294,6 +316,7 @@ h3{
     #outlet-a{
         padding: 0 20px 0 20px;
     }
+    */
     #footer-block{
         display: flex;
         flex-direction: column;
@@ -312,9 +335,17 @@ h3{
         padding: 30px 10px 10px 10px;
     }
     .logo{
-        padding: 0px 20px 50px 0;
-        width: 50%;
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(180deg) brightness(0%) contrast(100%);
+        position: absolute;
+        top: 5px;
+        left:40%;
+        width: 70px;
         height: auto;
+        padding: 15px 0 0 20px;
+        background-color
+    }
+    .footer{
+        position: relative;
     }
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }
