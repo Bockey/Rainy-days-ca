@@ -211,6 +211,7 @@ h3{
     font-family: Tahoma, Georgia, serif ;
     font-size: 20px;
     font-weight: normal;
+    
 }
 /*about page*/
 #home-bread{
@@ -327,12 +328,15 @@ h3{
         padding: 0 20px 0 20px;
     }
     */
+    #cat-div{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
     .category-name{
         margin-top: 80px;
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 170px;
-
     }
     #footer-block{
         display: flex;
@@ -361,15 +365,19 @@ h3{
         width: 100px;
         height: auto;
         padding: 15px 0 0 20px;
-        background-color
     }
     .logo1{
         width: 100px;
+        margin-top: 10px;
     }
-    .footer{
-        position: relative;
-        
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }
     #footer-block :nth-child(3) { order: 1; }
+    
+/*about*/
+#bread-crumbs{
+    display: none;
+}
+.about-contact{
+    margin-top: 20%;
 }
