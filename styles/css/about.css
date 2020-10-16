@@ -1,0 +1,23 @@
+/*about page*/
+#home-bread{
+    text-decoration: none;
+    color: #000;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 20px;
+}
+#home-bread:hover{
+    color: #005438;
+}
+#current-bread{
+    font-size: 30px;
+    padding: 0 0 0 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width:800px){
+ 

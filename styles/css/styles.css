@@ -99,6 +99,7 @@ input{
     justify-content: space-between;
     padding: 1rem 3rem 1rem 3rem;
     flex-wrap: wrap;
+    
 }
 #branding {
     background-color:#DFDDDD ;
@@ -106,6 +107,7 @@ input{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 #branding li{
     display: inline-block;
@@ -165,11 +167,12 @@ footer li a{
 #footer-list li{
     padding: 10px 20px 10px 5px;
 }
-.footer{
-    position: absolute;
-    bottom: 0;
+footer{
     width: 100%;
-    height: auto;
+    margin: 0;
+}
+body{
+    margin: 0;
 }
 /*home-page*/
 main{
@@ -210,24 +213,27 @@ h2{
 h3{
     font-family: Tahoma, Georgia, serif ;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: normal;   
+}
+/*form*/
+.form__input{
+    display: block;
+}
+#form-field2{
     
 }
-/*about page*/
-#home-bread{
+/*Sign in - Sign up*/
+.sign-button{
     text-decoration: none;
-    color: #000;
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 5px 0 20px;
+    border: 1px solid #005438;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    color:#005438;
 }
-#home-bread:hover{
-    color: #005438;
-}
-#current-bread{
-    font-size: 30px;
-    padding: 0 0 0 0;
+.sign-button:hover{
+    color: #FFF;
+    background-color: #005438;
 }
 @media (max-width:800px)
 {
@@ -369,6 +375,10 @@ h3{
     .logo1{
         width: 100px;
         margin-top: 10px;
+    }
+    footer{
+        position: static;
+        bottom: 0;
     }
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }
