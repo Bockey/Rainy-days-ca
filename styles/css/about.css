@@ -14,9 +14,9 @@
     font-size: 30px;
     padding: 0 0 0 0;
 }
-footer{
-    position: absolute;
-    bottom: 0;
+main{
+    
+    height: 100vw;
 }
 
 @media (max-width:800px){
