@@ -219,8 +219,14 @@ h3{
 .form__input{
     display: block;
 }
-#form-field2{
-    
+/*favourites*/
+#favor-button{
+    border: 1px solid #DFDDDD;
+    padding: 20px 50px 5px 40px;
+    background-color: #000;
+}
+#favor-button:hover{
+    background-color: #005438;
 }
 /*Sign in - Sign up*/
 .sign-button{
