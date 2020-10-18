@@ -107,7 +107,7 @@ footer{
     }
     
 }
-@media (max-width:400px){
+@media (max-width:474px){
     #center-image{
         width: 165px;
         height: 165px;
