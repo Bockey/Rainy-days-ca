@@ -72,3 +72,6 @@ footer{
 .sign-button-div{
     margin-bottom: 20px;
 }
+main{
+    height: 80vmax; 
+}
