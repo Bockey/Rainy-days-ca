@@ -175,10 +175,12 @@ body{
     margin: 0;
 }
 /*home-page*/
-main{
-    background-image: url("../../images/Texture.png");
-    background-position: -450px 200px;
+#cat-div{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
 }
+
 .new-products{
     display: flex;
     justify-content: space-evenly;
@@ -205,7 +207,12 @@ main{
     width: 100vw;
     height: auto;
 }
-
+h1{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #253631;
+    font-weight: normal;
+}
 h2{
     font-family: Georgia,  serif;
     font-size: 30px;
@@ -253,7 +260,7 @@ h3{
     color: #FFF;
     background-color: #005438;
 }
-@media (max-width:800px)
+@media (max-width:810px)
 {
     /* Smaller Screen */
     main{
@@ -352,11 +359,6 @@ h3{
         padding: 0 20px 0 20px;
     }
     */
-    #cat-div{
-        display: flex;
-        max-width: 100%;
-        justify-content: center;
-    }
     .category-name{
         margin-top: 80px;
         padding-top: 30px;

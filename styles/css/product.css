@@ -1,0 +1,74 @@
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#left-side-imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:20px 0 20px 20px;
+}
+#center-image{
+   width: 660px;
+   height: 660px;
+   border: 1px solid black;
+   margin:20px 0 20px 20px;
+}
+#right-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin-left: 20px;
+}
+.left-image{
+   width: 200px;
+   height: 200px;
+   border: 1px solid black; 
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: normal;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+p{
+      
+    font-family: Tahoma, Georgia, Verdana;
+    font-size: 20px;
+}
+#xs, #s, #m, #l, #xl{
+    display: none;
+}
+#product-button{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #000;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    margin-top: 40px;
+}
+#product-button:hover{
+    background-color: #005438;
+}
+#size-boxes label{
+    border: 1px solid #000;
+    padding:20px 20px;
+}
+#xs:checked+label, #s:checked+label, #m:checked+label, #l:checked+label, #xl:checked+label{
+    background-color: #000;
+    color: #FFF;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}

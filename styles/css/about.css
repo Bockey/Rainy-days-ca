@@ -65,7 +65,7 @@ footer{
 #contact-link:hover{
     color: #DFDDDD;
 }
-@media (max-width:800px){
+@media (max-width:810px){
  
 footer{
     position: static;

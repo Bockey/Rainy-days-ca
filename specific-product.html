@@ -5,6 +5,7 @@
     <meta name="description" content="This is the home page of Rainy Days jackets">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/css/styles.css" rel="stylesheet">
+    <link href="styles/css/product.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -39,23 +40,40 @@
       </nav>
     </header>
     <main>
+      <div id="left-side-imgs">
+        <div class="left-image">
+          <a href="#"></a>
+        </div>
+        <div class="left-image">
+          
+        </div>
+        <div class="left-image">
+          
+        </div>
+      </div>
+        <div id="center-image">
+          
+        </div>
+      
+      <div id="right-text">
         <h1>RainyDays Jacket</h1>
         <p>kr 1199.00</p>
         <p>This is description. This is description.This is description. This is description.This is description. This is description.This is description. This is description.This is description. This is description.This is description. This is description.</p>
-        <fieldset>
-              <legend>Size</legend>
-          <input type="radio" name="size" value="xs">XS
-          <input type="radio" name="size" value="s">S
-          <input type="radio" name="size" value="m">M
-          <input type="radio" name="size" value="l">L
-          <input type="radio" name="size" value="xl">XL
-          <a href="payment.html">ADD TO CART</a>
-        </fieldset>
-        <a href="#"><img src="images/FTurquoiseJacket-front-small.jpg" alt=""></a>
-        <a href="#"><img src="images/FTurquoiseJacket-back-small.jpg" alt=""></a>
-        <a href="#"><img src="images/FTurquoiseJacket-preview-small.jpg" alt=""></a>
-        <a href="#"><img src="images/FTurquoiseJacket-preview.jpg" alt=""></a>
-
+        <h2>Size</h2>
+        <div id="size-boxes">
+          <input type="radio" name="size" id="xs" value="xs">
+          <label for="xs">XS</label>
+          <input type="radio" name="size" id="s" value="s">
+          <label for="s">S</label>
+          <input type="radio" name="size" id="m" value="m">
+          <label for="m">M</label>
+          <input type="radio" name="size" id="l" value="l">
+          <label for="l">L</label>
+          <input type="radio" name="size" id="xl" value="xl">
+          <label for="xl">XL</label>
+        </div>
+        <a href="payment.html" id="product-button">ADD TO CART</a>
+      </div>
     </main>
     <footer>
       <div id="branding">
