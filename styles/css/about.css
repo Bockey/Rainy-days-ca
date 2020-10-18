@@ -58,7 +58,12 @@ footer{
     justify-content: space-around;
     width: 90%;
 }
-
+#contact-link{
+    color: #000;
+}
+#contact-link:hover{
+    color: #DFDDDD;
+}
 @media (max-width:800px){
  
 footer{
