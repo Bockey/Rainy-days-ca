@@ -39,10 +39,10 @@ h2{
     font-size: 30px;
     font-weight: normal;
 }
-footer{
+/*footer{
     position: absolute;
     bottom: 0;
-}
+}*/
 #contact-grid{
     display: grid;
     grid-template-columns: 33% 34% 33%;
@@ -67,14 +67,14 @@ footer{
 }
 @media (max-width:810px){
  
-footer{
+/*footer{
     position: static;
-}
+}*/
 .sign-button-div{
     margin-bottom: 20px;
 }
-main{
+/*main{
     height: 80vmax; 
     padding-bottom: 45%;
-}
+}*/
 }

@@ -46,6 +46,9 @@ nav label, #navigation{
 #side-icons{
     display: block;
 }    
+#side-icons label{
+    cursor: pointer;
+}
 #sides-2{
     display: flex;
     flex-wrap: wrap;
@@ -169,10 +172,13 @@ footer li a{
 }
 footer{
     width: 100%;
+    height: 100px;
     margin: 0;
 }
-body{
+main{
     margin: 0;
+    padding-bottom: 100px;
+    min-height: 100vw;
 }
 /*home-page*/
 #cat-div{
@@ -396,10 +402,10 @@ h3{
         width: 100px;
         margin-top: 10px;
     }
-    footer{
+    /*footer{
         position: static;
         bottom: 0;
-    }
+    }*/
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }
     #footer-block :nth-child(3) { order: 1; }
