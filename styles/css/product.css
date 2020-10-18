@@ -44,7 +44,7 @@ h2{
     font-weight: normal;
 }
 p{
-      
+    max-width: 80%;  
     font-family: Tahoma, Georgia, Verdana;
     font-size: 20px;
 }
@@ -105,7 +105,21 @@ footer{
         height: 330px;
         margin-top: 75px;
     }
-    
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        font-weight: normal;
+    }
+    p{
+          
+        font-family: Tahoma, Georgia, Verdana;
+        font-size: 20px;
+    }
 }
 @media (max-width:474px){
     #center-image{
