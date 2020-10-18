@@ -85,6 +85,7 @@ footer{
     }
     #product-button{
         margin-bottom: 50px;
+        margin-top: 0;
     }
     .left-image{
         width: 100px;
@@ -119,15 +120,14 @@ footer{
         font-weight: normal;
     }
     p{
-          
         font-family: Tahoma, Georgia, Verdana;
         font-size: 20px;
     }
-    #right-text :nth-child(1) { order: 1; }
+    #right-text :nth-child(1) { order: 3; }
     #right-text :nth-child(2) { order: 5; }
     #right-text :nth-child(3) { order: 6; }
-    #right-text :nth-child(4) { order: 2; }
-    #right-text :nth-child(5) { order: 3; }
+    #right-text :nth-child(4) { order: 1; }
+    #right-text :nth-child(5) { order: 2; }
     #right-text :nth-child(6) { order: 4; }
 }
 @media (max-width:474px){
@@ -139,7 +139,7 @@ footer{
         width: 53px;
         height: 53px;
     }
-#left-side-imgs{
+    #left-side-imgs{
     height: 175px;
     }
 }
