@@ -9,12 +9,14 @@ main{
     flex-direction: column;
     justify-content: space-between;
     margin:20px 0 20px 20px;
+    
 }
 #center-image{
    width: 660px;
    height: 660px;
    border: 1px solid black;
    margin:20px 0 20px 20px;
+   background-image: url(../../images/center.jpg);
 }
 #right-text{
     display: flex;
@@ -28,6 +30,7 @@ main{
    width: 200px;
    height: 200px;
    border: 1px solid black; 
+   background-image: url(../../images/left.jpg);
 }
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -71,4 +74,30 @@ p{
 footer{
     position: absolute;
     bottom: 0;
+}
+@media (max-width:810px){
+    footer{
+        position: static;
+        bottom:0;
+    }
+    #product-button{
+        margin-bottom: 20px;
+    }
+    .left-image{
+        width: 100px;
+        height: 100px;
+    }
+    #center-image{
+        width: 330px;
+        height: 330px;
+    }
+    main{
+        height: 80vmax; 
+        padding-bottom: 25%;
+        align-items: center;
+    }
+    #left-side-imgs{
+        height: 330px;
+    }
+    
 }
