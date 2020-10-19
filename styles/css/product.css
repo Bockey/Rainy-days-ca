@@ -89,17 +89,11 @@ p{
     text-decoration: none;
     padding: 5px;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-}
+
 
 
 @media (max-width:903px){
-    footer{
-        position: static;
-        bottom:0;
-    }
+    
     #product-button{
         margin-bottom: 50px;
         margin-top: 0;
