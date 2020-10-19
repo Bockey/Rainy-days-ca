@@ -9,7 +9,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     margin:20px 0 20px 20px;
-    
+    max-height: 660px;
 }
 #center-image{
    width: 660px;
@@ -26,6 +26,11 @@ main{
     max-width: 500px;
     margin-left: 20px;
     flex-wrap: wrap;
+    /*display: block;
+    text-align: center;*/
+}
+#right-text p{
+    text-align: left;
 }
 .left-image{
    width: 200px;
@@ -58,7 +63,7 @@ p{
     padding: 10px 30px;
     display: flex;
     justify-content: center;
-    max-width: 200px;
+    max-width: 250px;
     margin-top: 40px;
 }
 #product-button1{
@@ -89,19 +94,38 @@ p{
     text-decoration: none;
     padding: 5px;
 }
+#product-button{
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+#product-button1{
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+#right-text :nth-child(1) { order: 3; }
+#right-text :nth-child(2) { order: 4; }
+#right-text :nth-child(3) { order: 6; }
+#right-text :nth-child(4) { order: 1; }
+#right-text :nth-child(5) { order: 2; }
+#right-text :nth-child(6) { order: 5; }
 
 
+@media (min-width: 1440px){
+   #right-text{
+    max-width: 500px;
+    margin-left: 20px;
+    display: block;
+   }
+   #product-button, #product-button1{
+      
+   }
+  
+}
 
-@media (max-width:903px){
+
+@media (max-width:919px){
     
-    #product-button{
-        margin-bottom: 50px;
-        margin-top: 0;
-    }
-    #product-button1{
-        margin-bottom: 50px;
-        margin-top: 0;
-    }
     .left-image{
         width: 100px;
         height: 100px;
@@ -113,8 +137,6 @@ p{
         margin-bottom: 0;
     }
     main{
-        height: 120vmax; 
-        padding-bottom: 45%;
         align-items: center;
         justify-content: center;
     }
@@ -138,14 +160,9 @@ p{
         font-family: Tahoma, Georgia, Verdana;
         font-size: 20px;
     }
-    #right-text :nth-child(1) { order: 3; }
-    #right-text :nth-child(2) { order: 4; }
-    #right-text :nth-child(3) { order: 6; }
-    #right-text :nth-child(4) { order: 1; }
-    #right-text :nth-child(5) { order: 2; }
-    #right-text :nth-child(6) { order: 5; }
+   
 }
-@media (max-width:474px){
+@media (max-width:490px){
     #center-image{
         width: 175px;
         height: 175px;
