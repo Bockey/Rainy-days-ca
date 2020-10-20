@@ -1,0 +1,13 @@
+.sign-button{
+    cursor: default;
+}
+.sign-button:hover{
+    background-color: #FFF;
+    color: #005438;
+}
+.sign-form p{
+    color: #005438;
+    display: block;
+    text-align: center;
+    margin-left: 10%;
+}
