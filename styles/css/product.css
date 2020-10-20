@@ -85,6 +85,9 @@ p{
     display: inline-block;
     margin-top: 5px;
 }
+label{
+    cursor: pointer;
+}
 #xs:checked+label, #s:checked+label, #m:checked+label, #l:checked+label, #xl:checked+label{
     background-color: #000;
     color: #FFF;
@@ -118,9 +121,11 @@ p{
     display: block;
    }
    #product-button, #product-button1{
-      
+      margin-top: 10px;
    }
-  
+   #go-to-cart-link{
+       margin-left: 100px;
+   }
 }
 
 

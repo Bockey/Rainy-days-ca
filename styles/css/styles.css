@@ -253,6 +253,22 @@ h3{
 #cart-button:hover{
     background-color: #005438;
 }
+#cart-button2{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #888888;
+    padding: 10px 45px 10px 35px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+#link-to-payment{
+    text-decoration: none;
+    color: #888888;
+    font-weight: bold;
+}
+#link-to-payment:hover{
+    color:#005438;
+}
 /*Sign in - Sign up*/
 .sign-button{
     text-decoration: none;
