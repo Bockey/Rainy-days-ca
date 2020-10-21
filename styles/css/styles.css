@@ -181,6 +181,29 @@ main{
     min-height: 100vw;
 }
 /*home-page*/
+.cover{
+    display: flex;
+    height: 40vw;
+    background-image: url(../../images/cover.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.cover-text{
+    text-decoration: none;
+    color: #DFDDDD;
+    font-size: 7vw;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: -3px 4px #000;
+    transition-property: font-size;
+    transition-duration: 1s;
+    
+}
+.cover-text:hover{
+    color: #DFDDDD;
+    font-size: 8vw;
+}
 #cat-div{
     display: flex;
     max-width: 100%;
