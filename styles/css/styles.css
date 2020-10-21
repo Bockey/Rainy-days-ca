@@ -188,22 +188,25 @@ main{
     background-size: cover;
     justify-content: center;
     align-items: center;
+    
 }
+
 .cover-text{
     text-decoration: none;
     color: #DFDDDD;
-    font-size: 7vw;
-    text-transform: capitalize;
+    font-size: 5vw;
+    text-transform: uppercase;
     font-weight: bold;
     text-shadow: -3px 4px #000;
-    transition-property: font-size;
-    transition-duration: 1s;
-    
+    transition-property:color;
+    transition-duration: 0.5s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .cover-text:hover{
-    color: #DFDDDD;
-    font-size: 8vw;
+    color: #253631;
+    
 }
+
 #cat-div{
     display: flex;
     max-width: 100%;
@@ -323,7 +326,7 @@ h3{
     color: #FFF;
     background-color: #005438;
 }
-@media (max-width:810px)
+@media (max-width:920px)
 {
     /* Smaller Screen */
     .cover{
