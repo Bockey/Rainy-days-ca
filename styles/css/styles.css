@@ -96,7 +96,7 @@ input{
 
 /*footer*/
 #footer-block{
-    background-color: #253631;
+    background-color: #005438;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -219,6 +219,7 @@ main{
     padding: 3rem 1rem 3rem 1rem;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .mini-banner{
     display: flex;
