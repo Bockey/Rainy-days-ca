@@ -184,7 +184,7 @@ footer{
 main{
     margin: 0;
     padding-bottom: 100px;
-    min-height: 100vw;
+    min-height: 100vh;
 }
 /*home-page*/
 .cover{
@@ -264,6 +264,71 @@ h3{
 /*form*/
 .form__input{
     display: block;
+}
+.form-body, .payment-title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.payment-title{
+    margin-top: 30px;
+}
+.payment-form-div{
+    display: flex;
+    flex-direction: row; 
+}
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-field1, .form-field2{
+    margin: 30px 40px;
+}
+ .payment-form input{   
+    margin-bottom: 10px;
+}
+#finish-button{
+    border: 1px solid #005438;
+    padding: 7px 25px 7px 25px;
+    display: inline-block;
+    margin-top: 10px;
+    color:#005438;
+    background-color: #FFF;
+}
+#finish-button:hover{
+    background-color: #005438;
+    color: #FFF;
+}
+#back-to-homepage{
+    text-decoration: none;
+    color: #888888;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#back-to-homepage:hover{
+    color:#005438;
+}
+@media (max-width:806px){
+    .payment-card-icons img{
+        width:200px;
+    }
+}
+@media (max-width:626px){
+    .payment-card-icons img{
+        width:150px;
+    }
+}
+@media (max-width:497px){
+    .payment-title h2{
+        text-align: center;
+    }
+}
+@media (max-width:476px){
+    .payment-card-icons img{
+        width:100px;
+    }
 }
 /*favourites*/
 #product-button{
