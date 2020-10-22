@@ -1,4 +1,7 @@
 /*header*/
+body{
+    font-family: Tahoma, Georgia, Verdana;
+}
 #header-box{
     background-color: #005438;
     display: flex;

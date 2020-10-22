@@ -72,4 +72,10 @@ h2{
     height: 80vmax; 
     padding-bottom: 45%;
 }*/
+#contact-grid{
+    grid-template-columns: 20% 60% 20%;
+}
+#contact-grid{
+    grid-template-columns: 20% 60% 20%;
+}
 }
