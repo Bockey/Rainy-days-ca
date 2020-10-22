@@ -277,6 +277,7 @@ h3{
 .payment-form-div{
     display: flex;
     flex-direction: row; 
+    flex-wrap: wrap;
 }
 .payment-form{
     display: flex;
