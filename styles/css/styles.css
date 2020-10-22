@@ -307,6 +307,7 @@ h3{
     color: #888888;
     font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 #back-to-homepage:hover{
     color:#005438;
@@ -321,7 +322,7 @@ h3{
         width:150px;
     }
 }
-@media (max-width:497px){
+@media (max-width:597px){
     .payment-title h2{
         text-align: center;
     }
@@ -329,6 +330,12 @@ h3{
 @media (max-width:476px){
     .payment-card-icons img{
         width:100px;
+    }
+}
+@media (max-width:534px){
+    .payment-form-div{
+        flex-direction: column;
+        align-content: center;
     }
 }
 /*favourites*/
@@ -528,10 +535,6 @@ h3{
         width: 100px;
         margin-top: 10px;
     }
-    /*footer{
-        position: static;
-        bottom: 0;
-    }*/
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }
     #footer-block :nth-child(3) { order: 1; }

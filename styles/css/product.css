@@ -26,8 +26,6 @@ main{
     max-width: 500px;
     margin-left: 20px;
     flex-wrap: wrap;
-    /*display: block;
-    text-align: center;*/
 }
 #right-text p{
     text-align: left;
