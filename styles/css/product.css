@@ -56,13 +56,19 @@ p{
 #xs, #s, #m, #l, #xl{
     display: none;
 }
-
-
 #size-boxes label{
     border: 1px solid #000;
     padding:20px 20px;
     display: inline-block;
     margin-top: 5px;
+}
+@media (max-width: 331px){
+    #size-boxes label{
+        border: 1px solid #000;
+        padding:10px 10px;
+        display: inline-block;
+        margin-top: 5px;
+    } 
 }
 label{
     cursor: pointer;
