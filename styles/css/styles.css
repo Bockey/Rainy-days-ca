@@ -1,4 +1,5 @@
 /*header*/
+
 body{
     font-family: Tahoma, Georgia, Verdana;
 }
@@ -45,6 +46,7 @@ nav label, #navigation{
 #header-side{
     display: flex;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 #side-icons{
     display: block;
