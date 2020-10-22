@@ -8,11 +8,11 @@
 
 #product-button1{
     margin-bottom: 10px;
-    display: block;
 }
 #go-to-cart-link{
     margin-bottom: 20px;
     font-weight: bold;
+    display: block;
 }
 #go-to-cart-link:hover{
     color: #005438;
