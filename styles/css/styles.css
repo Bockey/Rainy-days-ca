@@ -194,8 +194,8 @@ main{
     min-height: 100vh;
 }
 .category-name{
-    margin-top: 100px;
-    background-color: #253631;
+    margin: 100px 0;
+    background-color: #005438;
     color: #FFF;
     padding:10px;
 }
@@ -243,14 +243,14 @@ main{
     margin-bottom: -35px;
     width: 100px;
     position: relative;
-    color: #005438;
+    color: #FFF;
     /*text-shadow: -1px 3px #FFF;*/
-    background-color: #DFDDDD;
+    background-color: #253631;
     text-align: center;
 }
 .new-products h3{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #005438;
 }
 .mini-banner{
@@ -258,6 +258,7 @@ main{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 30px 2px;
 }
 .mini{
     padding-top: 1rem;
