@@ -39,6 +39,9 @@
     font-family: Tahoma, Georgia, Verdana;
     font-size: 20px;
 }
+.main-text-cart p{
+    max-width: 90%;
+}
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;

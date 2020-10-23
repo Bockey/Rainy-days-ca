@@ -4,6 +4,9 @@ body{
     font-family: Tahoma, Georgia, Verdana;
 }
 /*header*/
+.logo, .logo1{
+    width: 150px;
+}
 #header-box{
     background-color: #005438;
     display: flex;
@@ -237,11 +240,13 @@ main{
     flex-wrap: wrap;
 }
 .new-products h2{
-    margin-bottom: -32px;
-    margin-left: 2px;
+    margin-bottom: -35px;
+    width: 100px;
     position: relative;
     color: #005438;
-    text-shadow: -1px 3px #FFF;
+    /*text-shadow: -1px 3px #FFF;*/
+    background-color: #DFDDDD;
+    text-align: center;
 }
 .new-products h3{
     text-align: center;
@@ -584,5 +589,10 @@ h3{
     }
     #powerful::before {
         font-size: 1.5vw;
+    }
+}
+@media (max-width:380px){
+    footer li a{ 
+        font-size: 14px;
     }
 }
