@@ -331,14 +331,16 @@ h3{
 }
 #back-to-homepage{
     text-decoration: none;
-    color: #888888;
+    color: #005438;
+    text-shadow: -1px 1px #888888;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 #back-to-homepage:hover{
-    color:#005438;
+    color:#DFDDDD;
+    text-shadow: -1px 1px #005438;
 }
 @media (max-width:806px){
     .payment-card-icons img{
@@ -383,7 +385,7 @@ h3{
 #product-button1{
     text-decoration: none;
     color: #FFF;
-    background-color: #888888;
+    background-color: #DFDDDD;
     padding: 10px 55px;
     display: flex;
     justify-content: center;
@@ -407,19 +409,21 @@ h3{
 #cart-button2{
     text-decoration: none;
     color: #FFF;
-    background-color: #888888;
+    background-color: #DFDDDD;
     padding: 10px 45px 10px 35px;
     margin-bottom: 20px;
     cursor: default;
 }
 #link-to-payment{
     text-decoration: none;
-    color: #888888;
+    color: #005438;
+    text-shadow: -1px 1px #888888;
     font-weight: bold;
     padding: 10px ;
 }
 #link-to-payment:hover{
-    color:#005438;
+    color:#DFDDDD;
+    text-shadow: -1px 1px #005438;
 }
 /*Sign in - Sign up*/
 .sign-button{

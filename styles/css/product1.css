@@ -12,8 +12,15 @@
 #go-to-cart-link{
     margin-bottom: 20px;
     font-weight: bold;
-    min-width: 100px;;
+    min-width: 100px;
+    color:#005438;
+    text-shadow:  -1px 1px #888888;
 }
 #go-to-cart-link:hover{
-    color: #005438;
+    color: #DFDDDD;
+    text-shadow: -1px 1px #005438;
 }
+#253631
+#005438
+#DFDDDD
+text-shadow: -1px 1px #005438;
