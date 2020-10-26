@@ -113,8 +113,7 @@ input{
     flex-wrap: wrap;
 }
 #branding {
-    height: 1.5rem;
-    /*height: 2.875rem;*/   
+    height: 1.5rem; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -207,9 +206,7 @@ main{
     background-size: cover;
     justify-content: center;
     align-items: center;
-    
 }
-
 .cover-text{
     text-decoration: none;
     color: #DFDDDD;
@@ -223,15 +220,12 @@ main{
 }
 .cover-text:hover{
     color: #253631;
-    
 }
-
 #cat-div{
     display: flex;
     max-width: 100%;
     justify-content: center;
 }
-
 .new-products{
     display: flex;
     justify-content: space-evenly;
@@ -240,13 +234,18 @@ main{
     flex-wrap: wrap;
 }
 .new-products h2{
-    margin-bottom: -35px;
+    margin-bottom: -55px;
     width: 100px;
     position: relative;
     color: #FFF;
-    /*text-shadow: -1px 3px #FFF;*/
     background-color: #253631;
     text-align: center;
+}
+@media (max-width:920px){
+    .new-products h2{
+        width: 80px;
+        font-size: 25px;
+    }
 }
 .new-products h3{
     text-align: center;
@@ -436,7 +435,7 @@ h3{
 }
 @media (max-width:920px)
 {
-    /* Smaller Screen */
+    /* Smaller Screen Global */
     .cover{
         display: none;
     }
@@ -552,10 +551,6 @@ h3{
         opacity: 0.4;
     }
     .logo{
-        
-        /*position: absolute;
-        top: 65px;
-        right:40%;*/
         width: 100px;
         height: auto;
         padding: 15px 0 0 20px;

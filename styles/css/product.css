@@ -17,6 +17,7 @@ main{
    border: 1px solid black;
    margin:20px 0 20px 20px;
    background-image: url(../../images/center.jpg);
+   background-size: cover;
 }
 #right-text{
     display: flex;
@@ -35,7 +36,22 @@ main{
    height: 200px;
    border: 1px solid black; 
    background-image: url(../../images/left.jpg);
+   background-size: cover;
 }
+.left-image2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black; 
+    background-image: url(../../images/left2.jpg);
+    background-size: cover;
+ }
+ .left-image3{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black; 
+    background-image: url(../../images/left3.jpg);
+    background-size: cover;
+ }
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
@@ -121,7 +137,7 @@ label{
 
 @media (max-width:920px){
     
-    .left-image{
+    .left-image, .left-image2, .left-image3{
         width: 100px;
         height: 100px;
     }
@@ -162,7 +178,7 @@ label{
         width: 175px;
         height: 175px;
     }
-    .left-image{
+    .left-image, .left-image2, .left-image3{
         width: 53px;
         height: 53px;
     }
@@ -175,7 +191,7 @@ label{
         width: 120px;
         height: 120px;
     }
-    .left-image{
+    .left-image, .left-image2, .left-image3{
         width: 30px;
         height: 30px;
     }
