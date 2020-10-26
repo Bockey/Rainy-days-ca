@@ -183,3 +183,13 @@ label{
     height: 120px;
     }
 }
+@media (max-width:210px){
+    #center-image{
+        width: 120px;
+        height: 120px;
+    }
+    
+    #left-side-imgs{
+    display: none;
+    }
+}
