@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/css/styles.css" rel="stylesheet">
     <link href="styles/css/about.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/favourites.css">
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
               <li><a href="sign-in.html"class="sign">Sign In</a></li>
               </ul>
             <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
-            <a href="cart.html"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
+            <a class="cartIconLink" href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
       </div>
@@ -46,10 +47,12 @@
       </div> 
       <div class="main-text-cart"> 
         <h1>Favourites</h1>
-        <img src="images/FTurquoiseJacket-front-small.jpg" alt="RainyDays winter jacket" class="picture-cart-fav">
+        <img src="images/redgirl1thumb.jpg" alt="RainyDays winter jacket" class="picture-cart-fav">
         <p>RainyDays Winter Jacket</p>
         <p>kr 1199.00</p>
-        <a href="favourites2.html" id="product-button">ADD TO CART</a>
+        <div id="container-link">
+          <a href="#" id="product-button">ADD TO CART</a>
+        </div>
       </div>
     </main>
     <footer>
@@ -78,5 +81,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/addtocart.js"></script>
   </body>
 </html>

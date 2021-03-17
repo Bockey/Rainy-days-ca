@@ -24,7 +24,7 @@
               <li><a href="sign-in.html" class="sign">Sign In</a></li>
               </ul>
             <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
-            <a href="cart.html"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
+            <a href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
       </div>
@@ -42,16 +42,19 @@
     <main>
       <div id="contact-grid">
         <div></div>
-        <div class="sign-form">
+        <form class="sign-form" action="" method="GET">
           <h1 class="about-contact">Insert information</h1> 
           <label for="email">Email</label class="form__input">
           <input type="email" name="email" id="email" class="form__input">
+          <div class="emailError error">Please enter a valid email address.</div>
           <label for="password">Password</label>
           <input type="password" name="password" id="password" class="form__input">
+          <div class="passwordError error">Your password needs to be at least 8 characters long.</div>
           <div class="sign-button-div">
-            <a href="sign-in2.html" class="sign-button">SIGN IN</a>
+            <button class="sign-button">SIGN IN</button>
+            <div class="formMessage"></div>
           </div>
-        </div>
+        </form>
         <div></div>
       </div>
     </main>
@@ -81,5 +84,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/signIn.js"></script>
   </body>
 </html>

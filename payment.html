@@ -17,18 +17,22 @@
       <img src="images/Payment 3.jpg" alt="amazon">
     </div>
     
-      <form action="" method="GET" class="payment-form">
+      <form action="" method="GET" novalidate class="payment-form">
         <div  class="payment-form-div">
           <div class="form-field1">
             <h3>Billing Info</h3>
             <label for="full-name">FULL NAME</label>
-            <input type="text" name="full-name" id="full-name"  required placeholder="John Doe" class="form__input">
+            <input type="text" name="full-name" id="full-name" class="form__input">
+            <div class="fullNameError error">Name is required!</div>
             <label for="address">ADDRESS</label>
-            <input type="text" name="address" id="address" required placeholder="497 Evergreen Rd." class="form__input">
+            <input type="text" name="address" id="address"  class="form__input">
+            <div class="addressError error">Address is required!</div>
             <label for="city">CITY</label>
-            <input type="text" name="city" id="city" required placeholder="Roseville" class="form__input">
+            <input type="text" name="city" id="city" class="form__input">
+            <div class="cityError error">City is required!</div>
             <label for="zip-code">ZIP CODE</label>
-            <input type="text" name="zip-code" id="zip-code" required placeholder="95673" class="form__input">
+            <input type="text" name="zip-code" id="zip-code" class="form__input">
+            <div class="zipCodeError error">Please enter a 4 digit number.</div>
             <label for="country">COUNTRY</label>
             <select name="country" id="country">
                 <option value="united-states">United States</option>
@@ -40,19 +44,24 @@
           <div class="form-field2">
             <h3>Credit Card Info</h3>
             <label for="card-number">CARD NUMBER</label>
-            <input type="text" name="card-number" id="card-number" required placeholder="1234 5678 3456 2456" class="form__input">
+            <input type="text" name="card-number" id="card-number" class="form__input">
+            <div class="cardNumberError error">Please enter a valid 16 digit card number.</div>
             <label for="cardholder-name">CARDHOLDER NAME</label>
-            <input type="text" name="city" id="cardholder-name" required placeholder="John Doe" class="form__input">
+            <input type="text" name="card-holder" id="cardholder-name" class="form__input">
+            <div class="cardholderNameError error">Card holder name is required!</div>
             <label for="expire-date">EXPIRE DATE</label>
-            <input type="month" name="expire-date" id="expire-date" min="2020-10" value="2020-10" max="2030-12" class="form__input">
+            <input type="month" name="expire-date" id="expire-date" min="2020-10" max="2030-12" class="form__input">
+            <div class="expireDateError error">Please enter expiration date from your card in this format: <br> YYYY-MM</div>
             <label for="cvv">CVV</label>
-            <input type="text" name="cvv" id="cvv" placeholder="123" class="form__input">
+            <input type="text" name="cvv" id="cvv" class="form__input">
+            <div class="cvvError error">Please enter a 3 digit number.</div>
           </div>
       </div>
-        <input type="submit" value="FINISH" id="finish-button">
+        <button id="finish-button">FINISH</button>
+        <div class="message"></div>
       </form>
     
        <a href="index.html" id="back-to-homepage">Go back to home page</a>
-
+      <script src="/js/payment.js"></script>
   </body>
 </html>

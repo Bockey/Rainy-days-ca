@@ -24,7 +24,7 @@
               <li><a href="sign-in.html"class="sign">Sign In</a></li>
               </ul>
             <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
-            <a href="cart.html"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
+            <a class="cartIconLink" href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
       </div>
@@ -41,24 +41,33 @@
     </header>
     <main>
       <div id="left-side-imgs">
-        <div class="left-image">
-          
-        </div>
-        <div class="left-image2">
-          
-        </div>
-        <div class="left-image3">
-          
-        </div>
+        <input type="radio" name="thumb" id="thumb" value="left1" checked>
+        <label for="thumb">
+          <div class="left-image image-active">
+          </div>
+        </label>
+        
+        <input type="radio" name="thumb" id="thumb2" value="left2">
+        <label for="thumb2">
+          <div class="left-image2 image-active">
+          </div>
+        </label>
+        
+        <input type="radio" name="thumb" id="thumb3" value="left3">
+        <label for="thumb3">
+          <div class="left-image3 image-active">
+          </div>
+        </label>
       </div>
         <div id="center-image">
           
         </div>
       
       <div id="right-text">
-        <h1>RainyDays Jacket</h1>
-        <h2>kr 1199.00</h2>
-        <p>This is a description. This is a description.This is a description. This is a description.This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description.</p>
+        <h1 class="productName">RainyDays Jacket</h1>
+        <h2 class="price">kr 1199.00</h2>
+        <p>A product description is the marketing copy that explains what a product is and why it’s worth purchasing. The purpose of a product description 
+          is to supply customers with important information about the features and benefits of the product so they’re compelled to buy (shopify.com).</p>
         <h2>Size</h2>
         <div id="size-boxes">
           <input type="radio" name="size" id="xs" value="xs">
@@ -72,7 +81,9 @@
           <input type="radio" name="size" id="xl" value="xl">
           <label for="xl">XL</label>
         </div>
-        <a href="specific-product-1.html" id="product-button">ADD TO CART</a>
+        <div id="container-link">
+          <a href="#" id="product-button">ADD TO CART</a>
+        </div>
       </div>
     </main>
     <footer>
@@ -101,5 +112,8 @@
         </div>
       </div>
     </footer>
+    
+    <script src="/js/addtocart.js"></script>
+    <script src="/js/price.js"></script>
   </body>
 </html>
