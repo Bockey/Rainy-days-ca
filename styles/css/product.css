@@ -178,25 +178,6 @@ label {
   margin-top: 0;
 }
 
-/* #right-text :nth-child(1) {
-  order: 3;
-}
-#right-text :nth-child(2) {
-  order: 4;
-}
-#right-text :nth-child(3) {
-  order: 6;
-}
-#right-text :nth-child(4) {
-  order: 1;
-}
-#right-text :nth-child(5) {
-  order: 2;
-}
-#right-text :nth-child(6) {
-  order: 5;
-} */
-
 @media (min-width: 1440px) {
   #right-text {
     max-width: 500px;
