@@ -289,9 +289,7 @@ main{
 	background-size:16px 17px;
 	background-position:right 5px top 14px;
 }
-.sort-label{
-    margin-left:  2rem;
-}
+
 
 
 /*Loader*/
@@ -445,6 +443,13 @@ h3{
     max-width: 180px;
     margin: 0 0 20px 0;
 }
+
+/*sort products*/
+
+.sort-products select{
+    margin: 20px 0 0 20px;
+}
+
 @media (max-width:806px){
     .payment-card-icons img{
         width:200px;
