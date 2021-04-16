@@ -244,7 +244,7 @@ main {
   padding: 3rem 1rem 3rem 1rem;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1683px;
+  /* max-width: 1683px; */
   margin: 60px auto;
 }
 .new-products h2,
