@@ -55,9 +55,19 @@
         <a href="index.html" id="home-bread">Home -</a>
         <h1 id="current-bread">Our products</h1>
       </div>
-      <div class="new-products">
-     
-      </div>
+      <div class="sort-products">
+        <select name="sort" id="sort">
+          <option value="0">Sort (recommended)</option>
+          <option value="1">Name (a - z)</option>
+          <option value="2">Name (z - a)</option>
+          <option value="3">Price (low - high)</option>
+          <option value="4">Price (high - low)</option>
+        </select>
+          <div class="new-products">
+            <div class="loader"></div>
+          </div>
+        </div>
+      
     </main>
     <footer>
       <div id="branding">
@@ -85,6 +95,8 @@
         </div>
       </div>
     </footer>
-    <script src="/js/wprestapi.js"></script>
+    <script src="/js/outlet.js"></script>
+    <script src="/js/sortProducts.js"></script>
+    <!-- <script src="/js/wprestapi.js"></script> -->
   </body>
 </html>
