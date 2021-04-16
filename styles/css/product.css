@@ -178,7 +178,7 @@ label {
   margin-top: 0;
 }
 
-#right-text :nth-child(1) {
+/* #right-text :nth-child(1) {
   order: 3;
 }
 #right-text :nth-child(2) {
@@ -195,7 +195,7 @@ label {
 }
 #right-text :nth-child(6) {
   order: 5;
-}
+} */
 
 @media (min-width: 1440px) {
   #right-text {
@@ -243,6 +243,7 @@ label {
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 0;
+    margin-top: 50px;
   }
   h2 {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -252,6 +253,9 @@ label {
   p {
     font-family: Tahoma, Georgia, Verdana;
     font-size: 20px;
+  }
+  #size-boxes {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 490px) {
