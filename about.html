@@ -23,10 +23,11 @@
       <div id="header-box">
         <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo" class="logo"></a>
         <div id="sides-2">
-          <div id="header-side">
-            <input type="search" name="search" id="search" placeholder="Search">
-            <a href="search-list.html" id="search-button"><img src="images/Search icon.png" alt="search-button"></a>
-          </div>
+          <form id="header-side" method="GET" action="https://www.google.com/search?q=rainy-days-ca.netlify.app%3A+">
+            <input type="search" name="q" id="search"  placeholder="Search">
+            <input  type="submit" name="btnG" id="btnG" value="Search">
+            <label id="search-button" for="btnG"><img  src="images/Search icon.png" alt="search-button"></label>
+            </form>
           <div id="side-icons">
             <label for="your-page"><img src="images/Your Page Icon.png" alt="your page"></label>
             <input type="checkbox" name="" id="your-page">
@@ -34,7 +35,7 @@
               <li><a href="sign-up.html" class="sign">Sign Up</a></li>
               <li><a href="sign-in.html"class="sign">Sign In</a></li>
               </ul>
-            <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
+            <a href="favourites.html?i=10"><img src="images/Favourites Icon.png" alt="favourites"></a>
             <a href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
@@ -53,10 +54,9 @@
     <main>  
         <div id="bread-crumbs"> 
           <a href="index.html" id="home-bread">Home -</a>
-          <p id="current-bread">About Us</p>
+          <h1 id="current-bread">About Us</h1>
         </div>
         <div class="main-text">
-          <h1 class="about-contact">About Us</h1>
           <h2>RainyDays Online Shop</h2>
           <p>We are an online shop selling men's and women’s rain jackets. They are designed for a range of different outdoor activities such as hiking.
             The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.</p>

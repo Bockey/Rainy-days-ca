@@ -1,6 +1,14 @@
 const cartButton = document.querySelector("#cart-button");
 const cartButtonContainer = document.querySelector(".cart-button-container");
-
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const number = params.get("n");
+const cartIconLink = document.querySelector(".cartIconLink");
+const image = document.querySelector(".image");
+const quantity = document.querySelector(".quantity");
+const id = params.get("i");
+const type = params.get("t");
+const price = document.querySelector(".price");
 /*change button, cart icon and add link under button when clicking on btn*/
 
 cartButton.addEventListener("click", function () {
@@ -12,11 +20,6 @@ cartButton.addEventListener("click", function () {
   cartButtonContainer.innerHTML += `<a href="payment.html" style="color:#005438; font-weight:bold; margin-top:20px;">
                                         GO TO DELIVERY AND PAYMENT</a>`;
 });
-
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const number = params.get("n");
-const cartIconLink = document.querySelector(".cartIconLink");
 
 /*change parameters in cart icon link on click on it which help change image*/
 
@@ -31,41 +34,32 @@ if (number === "1") {
   cartIconLink.innerHTML = `<img src="images/Icon awesome-shopping-cart.png" alt="cart">`;
 }
 
-const image = document.querySelector(".image");
-const price = document.querySelector(".price");
-const quantity = document.querySelector(".quantity");
-const id = params.get("i");
-const type = params.get("t");
+/*cart image, name and price*/
 
-/*change image preview on cart page*/
+const urlProduct =
+  "https://bockey.one/rainydays-restapi/wp-json/wc/store/products/" + id;
+async function getSingleProductCart() {
+  try {
+    const response = await fetch(urlProduct);
+    const responseJson = await response.json();
+    console.log(responseJson);
+    cartItem(responseJson);
+  } catch (error) {
+    console.log(`Error is ${error}`);
+  }
+}
+getSingleProductCart();
 
-if (id === "redgirl") {
-  image.innerHTML = `<img src="images/redgirl1thumb.jpg">`;
-} else if (id === "greenboy") {
-  image.innerHTML = `<img src="images/greenboy1thumb.jpg">`;
-} else if (id === "yellowgirl") {
-  image.innerHTML = `<img src="images/yellowgirl1thumb.jpg">`;
-} else if (id === "orangeboy") {
-  image.innerHTML = `<img src="images/orangeboy1thumb.jpg">`;
-} else if (id === "yellowboy") {
-  image.innerHTML = `<img src="images/little-boy.jpg">`;
-} else if (id === "purplegirl") {
-  image.innerHTML = `<img src="images/little-girl.jpg">`;
-} else if (id === "empty") {
-  image.innerHTML = ``;
-} else {
-  image.innerHTML = `<img src="images/redgirl1thumb.jpg">`;
+function cartItem(product) {
+  image.innerHTML = `<img src="${product.images[0].src}">`;
+  price.textContent = `${product.name} - kr ${product.prices.price}.00`;
 }
 
-/*change price on cart page*/
-
-if (type === "wj") {
-  price.textContent = `RainyDays Winter Jacket kr 1199.00`;
-} else if (type === "clear") {
+/*Empty cart*/
+if (type === "clear") {
   price.textContent = `Your cart is empty`;
   quantity.textContent = ``;
   cartButton.textContent = "Go back";
   cartButton.href = "javascript:history.go(-1)";
 } else {
-  price.textContent = `RainyDays Rain Coat kr 999.00`;
 }

@@ -23,10 +23,11 @@
       <div id="header-box">
         <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo" class="logo"></a>
         <div id="sides-2">
-          <div id="header-side">
-            <input type="search" name="search" id="search" placeholder="Search">
-            <a href="search-list.html" id="search-button"><img src="images/Search icon.png" alt="search-button"></a>
-          </div>
+          <form id="header-side" method="GET" action="https://www.google.com/search?q=rainy-days-ca.netlify.app%3A+">
+            <input type="search" name="q" id="search"  placeholder="Search">
+            <input  type="submit" name="btnG" id="btnG" value="Search">
+            <label id="search-button" for="btnG"><img  src="images/Search icon.png" alt="search-button"></label>
+            </form>
           <div id="side-icons">
             <label for="your-page"><img src="images/Your Page Icon.png" alt="your page"></label>
             <input type="checkbox" name="" id="your-page">
@@ -34,7 +35,7 @@
               <li><a href="sign-up.html" class="sign">Sign Up</a></li>
               <li><a href="sign-in.html"class="sign">Sign In</a></li>
               </ul>
-            <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
+            <a href="favourites.html?i=10"><img src="images/Favourites Icon.png" alt="favourites"></a>
             <a class="cartIconLink" href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
@@ -51,6 +52,10 @@
       </nav>
     </header>
     <main>
+  
+      <div class="main">
+       
+      
       <div id="left-side-imgs">
         <input type="radio" name="thumb" id="thumb" value="left1" checked>
         <label for="thumb">
@@ -70,15 +75,18 @@
           </div>
         </label>
       </div>
+      
         <div id="center-image">
           
         </div>
+        
+      
+       
       
       <div id="right-text">
-        <h1 class="productName">RainyDays Jacket</h1>
-        <h2 class="price">kr 1199.00</h2>
-        <p>A product description is the marketing copy that explains what a product is and why it’s worth purchasing. The purpose of a product description 
-          is to supply customers with important information about the features and benefits of the product so they’re compelled to buy (shopify.com).</p>
+        <h1 class="productName"></h1>
+        <h2 class="price"></h2>
+        <p></p>
         <h2>Size</h2>
         <div id="size-boxes">
           <input type="radio" name="size" id="xs" value="xs">
@@ -96,6 +104,14 @@
           <a href="#" id="product-button">ADD TO CART</a>
         </div>
       </div>
+    </div>
+    <div class="featured-container">
+      <h3>You my also like:</h3>
+      <div class="featured">
+        
+      </div>
+    </div>
+      
     </main>
     <footer>
       <div id="branding">
@@ -123,8 +139,9 @@
         </div>
       </div>
     </footer>
-    
+    <script src="/js/wprestapi.js"></script>
     <script src="/js/addtocart.js"></script>
-    <script src="/js/price.js"></script>
+    <script src="/js/specific-product.js"></script>
+    
   </body>
 </html>

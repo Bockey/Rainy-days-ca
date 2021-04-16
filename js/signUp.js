@@ -73,7 +73,7 @@ function submitForm(event) {
     formMessage.textContent = "Please fill out all the fields.";
     formMessage.style.color = "red";
   }
-  // clear all input values
+  /*clear all input values*/
   form.reset();
 }
 

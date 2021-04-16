@@ -22,10 +22,11 @@
       <div id="header-box">
         <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo" class="logo"></a>
         <div id="sides-2">
-          <div id="header-side">
-            <input type="search" name="search" id="search" placeholder="Search">
-            <a href="search-list.html" id="search-button"><img src="images/Search icon.png" alt="search-button"></a>
-          </div>
+          <form id="header-side" method="GET" action="https://www.google.com/search?q=rainy-days-ca.netlify.app%3A+">
+            <input type="search" name="q" id="search"  placeholder="Search">
+            <input  type="submit" name="btnG" id="btnG" value="Search">
+            <label id="search-button" for="btnG"><img  src="images/Search icon.png" alt="search-button"></label>
+            </form>
           <div id="side-icons">
             <label for="your-page"><img src="images/Your Page Icon.png" alt="your page"></label>
             <input type="checkbox" name="" id="your-page">
@@ -33,7 +34,7 @@
               <li><a href="sign-up.html" class="sign">Sign Up</a></li>
               <li><a href="sign-in.html"class="sign">Sign In</a></li>
               </ul>
-            <a href="favourites.html"><img src="images/Favourites Icon.png" alt="favourites"></a>
+            <a href="favourites.html?i=10"><img src="images/Favourites Icon.png" alt="favourites"></a>
             <a href="cart.html?i=empty&t=clear"><img src="images/Icon awesome-shopping-cart.png" alt="cart"></a>
           </div>
         </div>
@@ -50,107 +51,23 @@
       </nav>
     </header>
     <main>
-        <div id="cat-div">
-            <h1 class="category-name">Men</h1>
+      <div id="bread-crumbs">
+        <a href="index.html" id="home-bread">Home -</a>
+        <h1 id="current-bread">Men</h1>
+      </div> 
+      <div class="sort-products">
+        <select name="sort" id="sort">
+          <option value="0">Sort (recommended)</option>
+          <option value="1">Name (a - z)</option>
+          <option value="2">Name (z - a)</option>
+          <option value="3">Price (low - high)</option>
+          <option value="4">Price (high - low)</option>
+        </select>
+        <div class="new-products-men">
+          <div class="loader"></div>
         </div>
-        <div class="new-products">
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=1199&i=greenboy&t=wj"><img src="images/greenboy1thumb.jpg" alt="Rainy Days Green Jacket"></a>
-            <h3>RainyDays Winter Jacket</h3>
-            <h3>kr 1199.00</h3>
-          </div>
-          <div>
-            <h2>New</h2>
-            <a href="specific-product.html?c=999&i=orangeboy"><img src="images/orangeboy1thumb.jpg" alt="Rainy Days Pink Orange Rain Coat"></a>
-            <h3>RainyDays Rain Coat</h3>
-            <h3>kr 999.00</h3>
-          </div>
         </div>
+        
     </main>
     <footer>
       <div id="branding">
@@ -178,5 +95,7 @@
         </div>
       </div>
     </footer>
+    <script src="/js/categoriesMen.js"></script>
+    <script src="/js/sortProducts.js"></script>
   </body>
 </html>

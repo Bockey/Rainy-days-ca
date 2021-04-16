@@ -130,58 +130,6 @@ function nrInput(value) {
   }
 }
 
-// function errorMessages() {
-//   if (validateInput(fullName.value, 1) === true) {
-//     fullNameError.style.display = "none";
-//   } else {
-//     fullNameError.style.display = "block";
-//   }
-//   if (validateInput(address.value, 1) === true) {
-//     addressError.style.display = "none";
-//   } else {
-//     addressError.style.display = "block";
-//   }
-//   if (validateInput(city.value, 1) === true) {
-//     cityError.style.display = "none";
-//   } else {
-//     cityError.style.display = "block";
-//   }
-//   if (
-//     validateInput(zipCode.value, 4) === true &&
-//     nrInput(zipCode.value) === true
-//   ) {
-//     zipCodeError.style.display = "none";
-//   } else {
-//     zipCodeError.style.display = "block";
-//   }
-//   if (
-//     validateInput(cardNumber.value, 16) === true &&
-//     nrInput(cardNumber.value) === true
-//   ) {
-//     cardNumberError.style.display = "none";
-//   } else {
-//     cardNumberError.style.display = "block";
-//   }
-//   if (validateInput(cardholderName.value, 1) === true) {
-//     cardholderNameError.style.display = "none";
-//   } else {
-//     cardholderNameError.style.display = "block";
-//   }
-//   if (
-//     validateInput(expireDate.value, 6) === true &&
-//     nrInput(expireDate.value) === true
-//   ) {
-//     expireDateError.style.display = "none";
-//   } else {
-//     expireDateError.style.display = "block";
-//   }
-//   if (validateInput(cvv.value, 3) === true && nrInput(cvv.value) === true) {
-//     cvvError.style.display = "none";
-//   } else {
-//     cvvError.style.display = "block";
-//   }
-// }
-
 function errorMessages1() {
   if (validateInput(fullName.value, 1) === true) {
     fullNameError.style.display = "none";

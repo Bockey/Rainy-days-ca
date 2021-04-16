@@ -2,6 +2,9 @@
 
 body{
     font-family: Tahoma, Georgia, Verdana;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 /*header*/
 .logo, .logo1{
@@ -52,6 +55,7 @@ nav label, #navigation{
     display: flex;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
+    position: relative;
 }
 #side-icons{
     display: block;
@@ -77,14 +81,20 @@ nav label, #navigation{
     top: 80px;
     right: 120px;
 }
+
 #search-button{
     background-color: #fff;
-    padding: 8px 3px 8px 3px;
-    border: 3px solid #005438;
-    border-left: #fff;
+    padding: 3px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#btnG{
+    display: none;
 }
 input{ 
     outline: none;
+    font-size: 1rem;
 }
 #sign-nav li{
     list-style-type: none;
@@ -215,40 +225,127 @@ main{
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: -3px 4px #000;
-    transition-property:color;
-    transition-duration: 0.5s;
+    transition: opacity 0.4s ease-in-out;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .cover-text:hover{
-    color: #253631;
+    opacity: 0.4;
 }
 #cat-div{
     display: flex;
     max-width: 100%;
     justify-content: center;
 }
-.new-products{
+.new-products, .new-products-men, .new-products-women, .new-products-kids{
     display: flex;
     justify-content: space-evenly;
     padding: 3rem 1rem 3rem 1rem;
     align-items: center;
     flex-wrap: wrap;
-}
-.new-products h2{
-    margin-bottom: -55px;
-    width: 100px;
+    max-width: 1683px;
+    margin: 60px auto;
     position: relative;
-    color: #FFF;
-    background-color: #253631;
-    text-align: center;
 }
+.new-products h2, .new-products-men h2, .new-products-women h2, .new-products-kids h2{
+    position: absolute;
+    color: #005438;
+    text-align: center;
+    top:10px;
+    z-index: 10;
+}
+.new-products div, .new-products-men div, .new-products-women div, .new-products-kids div{
+    margin: 20px 10px;
+}
+.new-products div img, .new-products-men div img, .new-products-women div img, .new-products-kids div img{
+    z-index: 9;
+    transition: transform 0.4s ease-in-out;
+    padding-bottom: 10px;
+}
+.new-products div img:hover, .new-products-men div img:hover, .new-products-women div img:hover, .new-products-kids div img:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+
+/*sorting of products and new container*/
+
+.sort-products{
+    padding-top: 70px;
+    max-width: 1683px;
+    margin: 0 auto;
+}
+.sort-products select{
+    padding: 0.7rem 2rem 0.7rem 0;
+    font-size: 1.1rem;
+    border: none;
+    color: #253631;
+    /*removes arrow*/
+    appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+    /*adds arrow*/
+    background:url('/images/drop-down-arrow.png');
+	background-repeat:no-repeat;
+	background-size:16px 17px;
+	background-position:right 5px top 14px;
+}
+.sort-label{
+    margin-left:  2rem;
+}
+
+
+/*Loader*/
+
+.loader {
+    border: 136px solid rgb(228, 228, 228);
+    border-top: 136px solid #253631;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*API error*/
+
+  .errorApi{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+/*Bread Crumbs*/
+
+#home-bread {
+    text-decoration: none;
+    color: #005438;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 20px;
+  }
+  #home-bread:hover {
+    color: #000;
+  }
+  #current-bread {
+    font-size: 30px;
+    padding: 0 0 0 0;
+    font-family: Tahoma, Georgia, Verdana;
+  }
+
 @media (max-width:920px){
     .new-products h2{
         width: 80px;
         font-size: 25px;
     }
 }
-.new-products h3{
+.new-products h3, .new-products-men h3, .new-products-women h3, .new-products-kids h3{
     text-align: center;
     margin-top: 5px;
     color: #005438;
@@ -323,14 +420,15 @@ h3{
     border: 1px solid #005438;
     padding: 7px 25px 7px 25px;
     margin: 10px 0;
-
-    color:#005438;
-    background-color: #FFF;
-}
-#finish-button:hover{
     background-color: #005438;
     color: #FFF;
+    
+}
+#finish-button:hover{
+    
     cursor: pointer;
+    color:#005438;
+    background-color: #FFF;
 }
 #back-to-homepage{
     color: #005438;
@@ -377,7 +475,7 @@ h3{
 #product-button{
     text-decoration: none;
     color: #FFF;
-    background-color: #000;
+    background-color: #005438;
     padding: 10px 30px;
     display: flex;
     justify-content: center;
@@ -385,7 +483,8 @@ h3{
     margin-top: 20px;
 }
 #product-button:hover{
-    background-color: #005438;
+    
+    background-color: #000;
 }
 #product-button1{
     text-decoration: none;
@@ -410,11 +509,12 @@ h3{
 #cart-button{
     text-decoration: none;
     color: #FFF;
-    background-color: #000;
+    background-color: #005438;
     padding: 10px 45px 10px 35px;
 }
 #cart-button:hover{
-    background-color: #005438;
+    
+    background-color: #000;
 }
 #cart-button2{
     text-decoration: none;
@@ -442,14 +542,15 @@ h3{
     padding: 7px 25px 7px 25px;
     display: inline-block;
     margin: 10px 0;
-    color:#005438;
-    background-color: #fff;
+    color: #FFF;
+    background-color: #005438;
     cursor: pointer;
     font-size: 19px;
 }
 .sign-button:hover{
-    color: #FFF;
-    background-color: #005438;
+    
+    color:#005438;
+    background-color: #fff;
 }
 @media (max-width:920px)
 {
@@ -552,15 +653,20 @@ h3{
         flex-direction: column;
     }
     #footer-list{
+        margin: 30px 0;
         padding: 0;
     }
     #footer-list li{
         float: left;
-        padding: 0px 15px 10px 15px;
+        padding: 10px 15px;
         border-radius: 10px;
         margin:1px;
     }
+    #footer-list li a{
+        font-size: 1rem;
+    }
     #social-net{
+        margin: 30px 0;
         padding:0;
     }
     #social-net img{
@@ -574,8 +680,7 @@ h3{
         padding: 15px 0 0 20px;
     }
     .logo1{
-        width: 100px;
-        margin-top: 10px;
+        display: none;
     }
     #footer-block :nth-child(1) { order: 3; }
     #footer-block :nth-child(2) { order: 2; }

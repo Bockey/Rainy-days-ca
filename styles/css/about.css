@@ -1,91 +1,75 @@
 /*about page*/
-#home-bread{
-    text-decoration: none;
-    color: #000;
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 5px 0 20px;
+
+#contact-grid {
+  /* display: grid;
+  grid-template-columns: 33% 34% 33%;*/
+  margin: 60px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#home-bread:hover{
-    color: #005438;
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
-#current-bread{
-    font-size: 30px;
-    padding: 0 0 0 0;
+.main-text-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
-.main-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px; 
-}  
-.main-text-cart{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px; 
-}  
-@media (min-width:1100px){
-    .main-text p{
-        width: 50%;
-    }
+@media (min-width: 1100px) {
+  .main-text p {
+    width: 50%;
+  }
 }
-.picture-cart-fav{
-    margin-top: 60px;
+.picture-cart-fav {
+  margin-top: 60px;
 }
- p{
-    max-width: 70%;  
-    font-family: Tahoma, Georgia, Verdana;
-    font-size: 20px;
+p {
+  max-width: 70%;
+  font-family: Tahoma, Georgia, Verdana;
+  font-size: 20px;
 }
-.main-text-cart p{
-    max-width: 90%;
+.main-text-cart p {
+  max-width: 90%;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 45px;
-    font-weight: normal;
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 45px;
+  font-weight: normal;
 }
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: normal;
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: normal;
 }
 
-#contact-grid{
-    display: grid;
-    grid-template-columns: 33% 34% 33%;
-    margin-top: 60px;
+.sign-form input {
+  margin-bottom: 20px;
+  border: 1px solid #dfdddd;
+  width: 90%;
+  height: 2rem;
 }
-.sign-form input{
+.sign-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+#contact-link {
+  color: #000;
+}
+#contact-link:hover {
+  color: #dfdddd;
+}
+@media (max-width: 810px) {
+  .sign-button-div {
     margin-bottom: 20px;
-    border: 1px solid #DFDDDD;
-    width: 90%;
-    height: 2rem;
-}
-.sign-button-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-#contact-link{
-    color: #000;
-}
-#contact-link:hover{
-    color: #DFDDDD;
-}
-@media (max-width:810px){
- 
+  }
 
-.sign-button-div{
-    margin-bottom: 20px;
-}
-#contact-grid{
-    grid-template-columns: 20% 60% 20%;
-}
-#contact-grid{
-    grid-template-columns: 20% 60% 20%;
-}
+  #contact-grid {
+  }
 }
