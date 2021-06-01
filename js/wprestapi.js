@@ -27,7 +27,7 @@ function createHTMl(products) {
     productsContainer.forEach((element) => {
       element.innerHTML += `<div>
                                 <h2>${products[i].description}</h2>
-                                <a href="specific-product.html?c=${products[i].prices.price}&i=${products[i].id}"><img src="${products[i].images[0].src}" alt="{${products[i].images[0].alt}"></a>
+                                <a href="specific-product.html?c=${products[i].prices.price}&i=${products[i].id}"><img src="${products[i].images[0].src}" alt="${products[i].images[0].alt}"></a>
                                 <h3>${products[i].name}</h3>
                                 <h3>kr ${products[i].prices.price}.00</h3>
                               </div>  `;

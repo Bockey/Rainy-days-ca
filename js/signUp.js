@@ -77,4 +77,4 @@ function submitForm(event) {
   form.reset();
 }
 
-form.addEventListener("submit", submitForm);
+signUpBtn.addEventListener("click", submitForm);

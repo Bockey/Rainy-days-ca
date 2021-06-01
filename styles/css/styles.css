@@ -5,16 +5,20 @@ body {
   box-sizing: border-box;
 }
 /*header*************************************************************************************************/
+.visibility {
+  display: block;
+}
 .logo,
 .logo1 {
   width: 150px;
+  margin: 5px;
 }
 #header-box {
   background-color: #005438;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px 50px 20px 50px;
+  align-items: center;
+  padding: 3rem 1rem;
   flex-wrap: wrap;
 }
 
@@ -23,17 +27,17 @@ nav ul {
   justify-content: space-around;
   flex-wrap: wrap;
   border-bottom: 1px solid #dfdddd;
-  margin-bottom: 0;
+  margin: 1rem 0;
   padding: 0;
+  border: none;
 }
 nav li {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 1rem 0;
 }
 nav a {
   text-decoration: none;
-  font-size: 45px;
+  font-size: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   color: #253631;
@@ -58,6 +62,7 @@ nav label,
 }
 #side-icons {
   display: block;
+  position: relative;
 }
 #side-icons label {
   cursor: pointer;
@@ -66,6 +71,7 @@ nav label,
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  margin: 5px;
 }
 #side-icons img {
   padding: 10px 0 0 20px;
@@ -77,13 +83,15 @@ nav label,
 #sign-nav {
   display: none;
   position: absolute;
-  top: 80px;
-  right: 120px;
+  top: 40px;
+  padding: 0;
+  margin: 0;
+  transform: translateX(-20%);
 }
 
 #search-button {
   background-color: #fff;
-  padding: 3px;
+  padding: 0.5rem;
   position: absolute;
   right: 0;
   cursor: pointer;
@@ -111,6 +119,7 @@ input {
   height: 53px;
   border: 3px solid #005438;
   border-right: #fff;
+  padding: 0 0.5rem;
 }
 
 /*footer**********************************************************************************************************/
@@ -119,7 +128,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 3rem 1rem;
   flex-wrap: wrap;
 }
 #branding {
@@ -135,6 +144,10 @@ input {
 }
 #branding li {
   display: inline-block;
+}
+#footer-list {
+  padding: 0;
+  margin: 5px;
 }
 #footer-list li {
   list-style-type: none;
@@ -179,18 +192,15 @@ input {
 footer li a {
   color: #dfdddd;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
-#social-net {
-  padding-bottom: 40px;
-  padding-top: 30px;
-}
+
 #social-net img {
   padding: 20px 20px 20px 20px;
   opacity: 0.6;
 }
 #footer-list li {
-  padding: 10px 20px 10px 5px;
+  padding: 1rem;
 }
 footer {
   width: 100%;
@@ -217,15 +227,20 @@ main {
   justify-content: center;
   align-items: center;
 }
+.cover h1 {
+  padding: 0;
+  margin: 0;
+}
 .cover-text {
   text-decoration: none;
   color: #dfdddd;
-  font-size: 5vw;
+  font-size: 4vw;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: -3px 4px #000;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0.8rem;
 }
 .cover-text:hover {
   opacity: 0.4;
@@ -244,7 +259,6 @@ main {
   padding: 3rem 1rem 3rem 1rem;
   align-items: center;
   flex-wrap: wrap;
-  /* max-width: 1683px; */
   margin: 60px auto;
 }
 .new-products h2,
@@ -270,8 +284,9 @@ main {
 .new-products-women div img,
 .new-products-kids div img {
   z-index: 9;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   padding-bottom: 10px;
+  height: 250px;
 }
 .new-products div img:hover,
 .new-products-men div img:hover,
@@ -336,7 +351,7 @@ main {
   text-decoration: none;
   color: #005438;
   float: left;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0 5px 0 20px;
 }
@@ -344,7 +359,7 @@ main {
   color: #000;
 }
 #current-bread {
-  font-size: 30px;
+  font-size: 1.5rem;
   padding: 0 0 0 0;
   font-family: Tahoma, Georgia, Verdana;
 }
@@ -362,13 +377,17 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 2px;
+  margin: 30px 0px;
+  padding: 3rem 1rem;
 }
 .mini {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   max-width: 100%;
+  margin: 5px;
   height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+.mini:hover {
+  opacity: 0.7;
 }
 .main {
   max-width: 100%;
@@ -378,18 +397,18 @@ main {
   height: auto;
 }
 h1 {
-  font-size: 45px;
+  font-size: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #253631;
   font-weight: normal;
 }
 h2 {
   font-family: Georgia, serif;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 h3 {
   font-family: Tahoma, Georgia, serif;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 /*sort products***********************************/
@@ -463,32 +482,7 @@ h3 {
 .sign-form {
   padding-left: 25px;
 }
-@media (max-width: 806px) {
-  .payment-card-icons img {
-    width: 200px;
-  }
-}
-@media (max-width: 626px) {
-  .payment-card-icons img {
-    width: 150px;
-  }
-}
-@media (max-width: 597px) {
-  .payment-title h2 {
-    text-align: center;
-  }
-}
-@media (max-width: 476px) {
-  .payment-card-icons img {
-    width: 100px;
-  }
-}
-@media (max-width: 534px) {
-  .payment-form-div {
-    flex-direction: column;
-    align-content: center;
-  }
-}
+
 /*favourites*/
 #product-button {
   text-decoration: none;
@@ -570,6 +564,9 @@ h3 {
   color: #005438;
   background-color: #fff;
 }
+.sign-button:disabled {
+  color: #005438;
+}
 @media (max-width: 920px) {
   /* Smaller Screen Global */
   .cover {
@@ -581,10 +578,17 @@ h3 {
   .main-banner img {
     display: none;
   }
-
+  .mini-banner {
+    margin: 0;
+    padding: 48px 0;
+  }
+  .mini-banner a {
+    width: 100%;
+  }
   .mini {
-    height: 40vw;
-    width: auto;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
   }
   #header-box {
     display: flex;
@@ -614,17 +618,17 @@ h3 {
     height: auto;
   }
   #sign-nav {
-    position: absolute;
-    top: 15px;
-    right: 38px;
-    padding: 0 0 15px 0;
-    border: 1px solid #dfdddd;
-    border-radius: 30px;
-    background-color: #dfdddd;
+    top: 31px;
+    padding: 10px 10px 10px 60px;
+    background-color: #005438;
+    transform: translateX(-48%);
   }
   #sign-nav li {
-    padding: 20px 15px 0 15px;
+    padding: 10px;
     text-align: center;
+    background: #dfdddd;
+    border-radius: 50%;
+    margin: 5px;
   }
   #sign-nav a {
     color: #005438;
@@ -642,9 +646,6 @@ h3 {
   #your-page:checked ~ #sign-nav {
     display: flex;
   }
-  #navigation:checked ~ #nav-list {
-    display: block;
-  }
   nav label {
     display: block;
     position: absolute;
@@ -655,11 +656,12 @@ h3 {
     display: none;
     margin-top: 67px;
     background-color: #000;
+    text-align: center;
+    padding: 20px 0;
   }
 
   nav a {
     padding: 0px 10px 0px 10px;
-    font-size: 30px;
     color: #fff;
   }
   .category-name {
@@ -668,7 +670,6 @@ h3 {
 
   .new-products h2 {
     width: 80px;
-    font-size: 25px;
   }
 
   #footer-block {
@@ -685,9 +686,7 @@ h3 {
     border-radius: 10px;
     margin: 1px;
   }
-  #footer-list li a {
-    font-size: 1rem;
-  }
+
   #social-net {
     margin: 30px 0;
     padding: 0;
@@ -747,5 +746,33 @@ h3 {
 @media (max-width: 380px) {
   footer li a {
     font-size: 14px;
+  }
+}
+/*sign up and sign in pages form*/
+
+@media (max-width: 806px) {
+  .payment-card-icons img {
+    width: 200px;
+  }
+}
+@media (max-width: 626px) {
+  .payment-card-icons img {
+    width: 150px;
+  }
+}
+@media (max-width: 597px) {
+  .payment-title h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 476px) {
+  .payment-card-icons img {
+    width: 100px;
+  }
+}
+@media (max-width: 534px) {
+  .payment-form-div {
+    flex-direction: column;
+    align-content: center;
   }
 }

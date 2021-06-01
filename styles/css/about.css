@@ -45,6 +45,7 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
   font-weight: normal;
+  max-width: 70%;
 }
 
 .sign-form input {

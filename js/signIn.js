@@ -53,9 +53,6 @@ function submitForm(event) {
     formMessage.textContent = "You are now signed in.";
     formMessage.style.color = "#005438";
     signUpBtn.disabled = "true";
-    signUpBtn.addEventListener("mouseenter", function () {
-      signUpBtn.style.color = "#005438";
-    });
   } else {
     formMessage.textContent = "Please fill out all the fields.";
     formMessage.style.color = "red";
@@ -64,4 +61,4 @@ function submitForm(event) {
   form.reset();
 }
 
-form.addEventListener("submit", submitForm);
+signUpBtn.addEventListener("click", submitForm);
