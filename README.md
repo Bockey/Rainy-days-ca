@@ -1,7 +1,7 @@
 # Through Course Assignment
 
-Started with design in XD, then coded with html and css, and later added functionality through JS.
+- Started with design in Adobe XD, then coded with HTML and CSS, and later added functionality through JavaScript.
 
-Used tools like Hotjar to improve user experience.
+- Used tools like Hotjar to improve user experience.
 
-Practicing of headless CMS. Products created in Wordpress and fetched with JS.
+- Practicing of headless CMS. Products created in WordPress and fetched with JavaScript.
